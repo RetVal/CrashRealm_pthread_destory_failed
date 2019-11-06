@@ -1,0 +1,97 @@
+2019-11-06 18:36:36.364153+0800 CrashRealm_Example[45886:3037881] /Users/closure/Library/Developer/CoreSimulator/Devices/5C217596-FAB4-4745-B28F-DD21A951E9F0/data/Containers/Data/Application/7EE47F69-8269-4CB0-9F9B-87E58B20C000/Documents/default.realm
+/Users/realm/workspace/realm_realm-core_release_5.23.5/src/realm/util/thread.cpp:186: [realm-core-5.23.5] pthread_mutex_destroy() failed
+0   CrashRealm_Example                  0x000000010b2a270c _ZN5realm4utilL18terminate_internalERNSt3__118basic_stringstreamIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE + 28
+1   CrashRealm_Example                  0x000000010b2a29c6 _ZN5realm4util9terminateEPKcS2_lOSt16initializer_listINS0_9PrintableEE + 390
+2   CrashRealm_Example                  0x000000010b2a32c0 _ZN5realm4util5Mutex11lock_failedEi + 0
+3   CrashRealm_Example                  0x000000010b24d1be _ZN5realm5TableD2Ev + 814
+4   CrashRealm_Example                  0x000000010ad26012 _ZNK5realm5Table10unbind_ptrEv + 178
+5   CrashRealm_Example                  0x000000010ad25f5a _ZN5realm4util8bind_ptrINS_5TableEE6unbindEv + 42
+6   CrashRealm_Example                  0x000000010ad25f25 _ZN5realm4util8bind_ptrINS_5TableEED2Ev + 21
+7   CrashRealm_Example                  0x000000010ad25f05 _ZN5realm13BasicTableRefINS_5TableEED2Ev + 21
+8   CrashRealm_Example                  0x000000010ad0ee05 _ZN5realm13BasicTableRefINS_5TableEED1Ev + 21
+9   CrashRealm_Example                  0x000000010ac1c3d3 _ZN5realm4ListD2Ev + 51
+10  CrashRealm_Example                  0x000000010ac1c435 _ZN5realm4ListD1Ev + 21
+11  CrashRealm_Example                  0x000000010ad56f4a -[RLMManagedArray .cxx_destruct] + 90
+12  libobjc.A.dylib                     0x00007fff50b96f02 _ZL27object_cxxDestructFromClassP11objc_objectP10objc_class + 83
+13  libobjc.A.dylib                     0x00007fff50ba64b3 objc_destructInstance + 64
+14  libobjc.A.dylib                     0x00007fff50bac94f -[NSObject dealloc] + 21
+15  libobjc.A.dylib                     0x00007fff50bad0d6 _ZN11objc_object17sidetable_releaseEb + 174
+16  CrashRealm_Example                  0x000000010ad42d07 _ZZ23RLMAddNotificationBlockIN5realm4ListEEP20RLMNotificationTokenP11objc_objectRT_U13block_pointerFvS5_P19RLMCollectionChangeP7NSErrorEbENUlRKNS0_19CollectionChangeSetESt13exception_ptrE_D2Ev + 39
+17  CrashRealm_Example                  0x000000010ad3c2f5 _ZZ23RLMAddNotificationBlockIN5realm4ListEEP20RLMNotificationTokenP11objc_objectRT_U13block_pointerFvS5_P19RLMCollectionChangeP7NSErrorEbENUlRKNS0_19CollectionChangeSetESt13exception_ptrE_D1Ev + 21
+18  CrashRealm_Example                  0x000000010ad47d81 _ZN5realm24CollectionChangeCallback4ImplIZ23RLMAddNotificationBlockINS_4ListEEP20RLMNotificationTokenP11objc_objectRT_U13block_pointerFvS7_P19RLMCollectionChangeP7NSErrorEbEUlRKNS_19CollectionChangeSetESt13exception_ptrE_ED2Ev + 49
+19  CrashRealm_Example                  0x000000010ad47b05 _ZN5realm24CollectionChangeCallback4ImplIZ23RLMAddNotificationBlockINS_4ListEEP20RLMNotificationTokenP11objc_objectRT_U13block_pointerFvS7_P19RLMCollectionChangeP7NSErrorEbEUlRKNS_19CollectionChangeSetESt13exception_ptrE_ED1Ev + 21
+20  CrashRealm_Example                  0x000000010ad475e9 _ZNSt3__120__shared_ptr_emplaceIN5realm24CollectionChangeCallback4ImplIZ23RLMAddNotificationBlockINS1_4ListEEP20RLMNotificationTokenP11objc_objectRT_U13block_pointerFvS9_P19RLMCollectionChangeP7NSErrorEbEUlRKNS1_19CollectionChangeSetESt13exception_ptrE_EENS_9allocatorISN_EEE16__on_zero_sharedEv + 41
+21  CrashRealm_Example                  0x000000010ad3fbfa _ZNSt3__114__shared_count16__release_sharedEv + 58
+22  CrashRealm_Example                  0x000000010ad3fb9f _ZNSt3__119__shared_weak_count16__release_sharedEv + 31
+23  CrashRealm_Example                  0x000000010ad42ccc _ZNSt3__110shared_ptrIN5realm24CollectionChangeCallback4BaseEED2Ev + 44
+24  CrashRealm_Example                  0x000000010ad42c95 _ZNSt3__110shared_ptrIN5realm24CollectionChangeCallback4BaseEED1Ev + 21
+25  CrashRealm_Example                  0x000000010ad42c75 _ZN5realm24CollectionChangeCallbackD2Ev + 21
+26  CrashRealm_Example                  0x000000010ad3c2d5 _ZN5realm24CollectionChangeCallbackD1Ev + 21
+27  CrashRealm_Example                  0x000000010abf295e _ZN5realm5_impl18CollectionNotifier8CallbackD2Ev + 62
+28  CrashRealm_Example                  0x000000010abef3a5 _ZN5realm5_impl18CollectionNotifier8CallbackD1Ev + 21
+29  CrashRealm_Example                  0x000000010abef70c _ZN5realm5_impl18CollectionNotifier15remove_callbackEy + 732
+30  CrashRealm_Example                  0x000000010abece22 _ZN5realm17NotificationTokenD2Ev + 114
+31  CrashRealm_Example                  0x000000010abecfb5 _ZN5realm17NotificationTokenD1Ev + 21
+32  CrashRealm_Example                  0x000000010ad3b6c6 -[RLMCancellationToken .cxx_destruct] + 38
+33  libobjc.A.dylib                     0x00007fff50b96f02 _ZL27object_cxxDestructFromClassP11objc_objectP10objc_class + 83
+34  libobjc.A.dylib                     0x00007fff50ba64b3 objc_destructInstance + 64
+35  libobjc.A.dylib                     0x00007fff50bac94f -[NSObject dealloc] + 21
+36  libobjc.A.dylib                     0x00007fff50bad0d6 _ZN11objc_object17sidetable_releaseEb + 174
+37  CrashRealm_Example                  0x000000010abc7aa3 __32-[RxViewController __notifyJob:]_block_invoke + 275
+38  CrashRealm_Example                  0x000000010b079d49 -[RxScheduler performAsCurrentScheduler:] + 505
+39  CrashRealm_Example                  0x000000010b076f66 __31-[RxRunLoopScheduler schedule:]_block_invoke + 86
+40  CoreFoundation                      0x00007fff23bb204c __CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__ + 12
+41  CoreFoundation                      0x00007fff23bb17b8 __CFRunLoopDoBlocks + 312
+42  CoreFoundation                      0x00007fff23bac61e __CFRunLoopRun + 1246
+43  CoreFoundation                      0x00007fff23babe16 CFRunLoopRunSpecific + 438
+44  CrashRealm_Example                  0x000000010b0764bf _ZL32__RxRunLoopSchedulerRunLoopEntryPv + 2303
+45  libsystem_pthread.dylib             0x00007fff51c04d36 _pthread_start + 125
+46  libsystem_pthread.dylib             0x00007fff51c0158f thread_start + 15!!! IMPORTANT: Please send this log and info about Realm SDK version and other relevant reproduction info to help@realm.io.2019-11-06 18:40:54.707181+0800 CrashRealm_Example[45886:3038269] /Users/realm/workspace/realm_realm-core_release_5.23.5/src/realm/util/thread.cpp:186: [realm-core-5.23.5] pthread_mutex_destroy() failed
+0   CrashRealm_Example                  0x000000010b2a270c _ZN5realm4utilL18terminate_internalERNSt3__118basic_stringstreamIcNS1_11char_traitsIcEENS1_9allocatorIcEEEE + 28
+1   CrashRealm_Example                  0x000000010b2a29c6 _ZN5realm4util9terminateEPKcS2_lOSt16initializer_listINS0_9PrintableEE + 390
+2   CrashRealm_Example                  0x000000010b2a32c0 _ZN5realm4util5Mutex11lock_failedEi + 0
+3   CrashRealm_Example                  0x000000010b24d1be _ZN5realm5TableD2Ev + 814
+4   CrashRealm_Example                  0x000000010ad26012 _ZNK5realm5Table10unbind_ptrEv + 178
+5   CrashRealm_Example                  0x000000010ad25f5a _ZN5realm4util8bind_ptrINS_5TableEE6unbindEv + 42
+6   CrashRealm_Example                  0x000000010ad25f25 _ZN5realm4util8bind_ptrINS_5TableEED2Ev + 21
+7   CrashRealm_Example                  0x000000010ad25f05 _ZN5realm13BasicTableRefINS_5TableEED2Ev + 21
+8   CrashRealm_Example                  0x000000010ad0ee05 _ZN5realm13BasicTableRefINS_5TableEED1Ev + 21
+9   CrashRealm_Example                  0x000000010ac1c3d3 _ZN5realm4ListD2Ev + 51
+10  CrashRealm_Example                  0x000000010ac1c435 _ZN5realm4ListD1Ev + 21
+11  CrashRealm_Example                  0x000000010ad56f4a -[RLMManagedArray .cxx_destruct] + 90
+12  libobjc.A.dylib                     0x00007fff50b96f02 _ZL27object_cxxDestructFromClassP11objc_objectP10objc_class + 83
+13  libobjc.A.dylib                     0x00007fff50ba64b3 objc_destructInstance + 64
+14  libobjc.A.dylib                     0x00007fff50bac94f -[NSObject dealloc] + 21
+15  libobjc.A.dylib                     0x00007fff50bad0d6 _ZN11objc_object17sidetable_releaseEb + 174
+16  CrashRealm_Example                  0x000000010ad42d07 _ZZ23RLMAddNotificationBlockIN5realm4ListEEP20RLMNotificationTokenP11objc_objectRT_U13block_pointerFvS5_P19RLMCollectionChangeP7NSErrorEbENUlRKNS0_19CollectionChangeSetESt13exception_ptrE_D2Ev + 39
+17  CrashRealm_Example                  0x000000010ad3c2f5 _ZZ23RLMAddNotificationBlockIN5realm4ListEEP20RLMNotificationTokenP11objc_objectRT_U13block_pointerFvS5_P19RLMCollectionChangeP7NSErrorEbENUlRKNS0_19CollectionChangeSetESt13exception_ptrE_D1Ev + 21
+18  CrashRealm_Example                  0x000000010ad47d81 _ZN5realm24CollectionChangeCallback4ImplIZ23RLMAddNotificationBlockINS_4ListEEP20RLMNotificationTokenP11objc_objectRT_U13block_pointerFvS7_P19RLMCollectionChangeP7NSErrorEbEUlRKNS_19CollectionChangeSetESt13exception_ptrE_ED2Ev + 49
+19  CrashRealm_Example                  0x000000010ad47b05 _ZN5realm24CollectionChangeCallback4ImplIZ23RLMAddNotificationBlockINS_4ListEEP20RLMNotificationTokenP11objc_objectRT_U13block_pointerFvS7_P19RLMCollectionChangeP7NSErrorEbEUlRKNS_19CollectionChangeSetESt13exception_ptrE_ED1Ev + 21
+20  CrashRealm_Example                  0x000000010ad475e9 _ZNSt3__120__shared_ptr_emplaceIN5realm24CollectionChangeCallback4ImplIZ23RLMAddNotificationBlockINS1_4ListEEP20RLMNotificationTokenP11objc_objectRT_U13block_pointerFvS9_P19RLMCollectionChangeP7NSErrorEbEUlRKNS1_19CollectionChangeSetESt13exception_ptrE_EENS_9allocatorISN_EEE16__on_zero_sharedEv + 41
+21  CrashRealm_Example                  0x000000010ad3fbfa _ZNSt3__114__shared_count16__release_sharedEv + 58
+22  CrashRealm_Example                  0x000000010ad3fb9f _ZNSt3__119__shared_weak_count16__release_sharedEv + 31
+23  CrashRealm_Example                  0x000000010ad42ccc _ZNSt3__110shared_ptrIN5realm24CollectionChangeCallback4BaseEED2Ev + 44
+24  CrashRealm_Example                  0x000000010ad42c95 _ZNSt3__110shared_ptrIN5realm24CollectionChangeCallback4BaseEED1Ev + 21
+25  CrashRealm_Example                  0x000000010ad42c75 _ZN5realm24CollectionChangeCallbackD2Ev + 21
+26  CrashRealm_Example                  0x000000010ad3c2d5 _ZN5realm24CollectionChangeCallbackD1Ev + 21
+27  CrashRealm_Example                  0x000000010abf295e _ZN5realm5_impl18CollectionNotifier8CallbackD2Ev + 62
+28  CrashRealm_Example                  0x000000010abef3a5 _ZN5realm5_impl18CollectionNotifier8CallbackD1Ev + 21
+29  CrashRealm_Example                  0x000000010abef70c _ZN5realm5_impl18CollectionNotifier15remove_callbackEy + 732
+30  CrashRealm_Example                  0x000000010abece22 _ZN5realm17NotificationTokenD2Ev + 114
+31  CrashRealm_Example                  0x000000010abecfb5 _ZN5realm17NotificationTokenD1Ev + 21
+32  CrashRealm_Example                  0x000000010ad3b6c6 -[RLMCancellationToken .cxx_destruct] + 38
+33  libobjc.A.dylib                     0x00007fff50b96f02 _ZL27object_cxxDestructFromClassP11objc_objectP10objc_class + 83
+34  libobjc.A.dylib                     0x00007fff50ba64b3 objc_destructInstance + 64
+35  libobjc.A.dylib                     0x00007fff50bac94f -[NSObject dealloc] + 21
+36  libobjc.A.dylib                     0x00007fff50bad0d6 _ZN11objc_object17sidetable_releaseEb + 174
+37  CrashRealm_Example                  0x000000010abc7aa3 __32-[RxViewController __notifyJob:]_block_invoke + 275
+38  CrashRealm_Example                  0x000000010b079d49 -[RxScheduler performAsCurrentScheduler:] + 505
+39  CrashRealm_Example                  0x000000010b076f66 __31-[RxRunLoopScheduler schedule:]_block_invoke + 86
+40  CoreFoundation                      0x00007fff23bb204c __CFRUNLOOP_IS_CALLING_OUT_TO_A_BLOCK__ + 12
+41  CoreFoundation                      0x00007fff23bb17b8 __CFRunLoopDoBlocks + 312
+42  CoreFoundation                      0x00007fff23bac61e __CFRunLoopRun + 1246
+43  CoreFoundation                      0x00007fff23babe16 CFRunLoopRunSpecific + 438
+44  CrashRealm_Example                  0x000000010b0764bf _ZL32__RxRunLoopSchedulerRunLoopEntryPv + 2303
+45  libsystem_pthread.dylib             0x00007fff51c04d36 _pthread_start + 125
+46  libsystem_pthread.dylib             0x00007fff51c0158f thread_start + 15!!! IMPORTANT: Please send this log and info about Realm SDK version and other relevant reproduction info to help@realm.io.
+(lldb) 
